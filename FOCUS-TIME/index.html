@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusTime</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="./src/main.js" defer></script>
+  <link rel="shortcut icon" href="./imagens/favicon.svg" type="image/x-svg">
+</head>
+<body>
+  <div id="app">
+    <button id="toggle-mode">
+      <samp class="sr-only">Ativar light mode!</samp>
+      <i class="ph-bold ph-sun"></i>
+      <i class="ph-bold ph-moon"></i>
+    </button>
+    <section id="timer" class="flex">
+      <span id="minutes">00</span>
+      
+      <span>:</span>
+      <span id="secunds">00</span>
+
+      </section>
+
+      <section id="controls" class="flex">
+        <button data-action="toggleRunning" class="ph ph-play-circle">
+          <samp class="sr-only">Iniciar contador</samp>
+        </button> 
+        <button data-action="toggleRunning" class="ph ph-pause-circle">
+          <samp class="sr-only">Parar contador</samp>
+        </button>
+        <button data-action="set" class="ph ph-timer secondary">
+          <samp class="sr-only">Ajustar contador</samp>
+        </button>
+        <button data-action="reset" class="ph ph-stop-circle secondary">
+          <samp class="sr-only">Reiniciar contador</samp>
+        </button>
+        <button data-action="toggleMusic" class="ph ph-speaker-none secondary">
+          <samp class="sr-only">Iniciar música</samp>
+        </button>
+        <button data-action="toggleMusic" class="ph ph-speaker-high">
+          <samp class="sr-only">Parar música</samp>
+        </button>
+      </section>
+      
+  </div>
+
+</body>
+</html>
